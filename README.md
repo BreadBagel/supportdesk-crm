@@ -44,7 +44,7 @@
    ```bash
    cp .env.example .env
    ```
-   Configure `JWT_SECRET` in `.env` before starting the server.
+   `JWT_SECRET` is optional for the portfolio demo; set it in `.env` when using a custom secret.
 
 3. **Start the Development Server**:
    ```bash
@@ -63,7 +63,7 @@
 
 ### Deploying to Vercel
 
-This repository includes a Vercel serverless API entry point and routing configuration. Import the repository in Vercel, keep the build command as `npm run build`, and add a strong `JWT_SECRET` environment variable. The JSON database is seeded into each function instance's temporary filesystem; use a hosted database for durable production data.
+This repository includes a Vercel serverless API entry point and routing configuration. Import the repository in Vercel and keep the build command as `npm run build`. The three demo accounts work without environment variables; set a strong `JWT_SECRET` in Vercel for a custom deployment. The JSON database is seeded into each function instance's temporary filesystem.
 
 ---
 

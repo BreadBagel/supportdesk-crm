@@ -2,11 +2,7 @@ import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 import { db, UserRecord, UserRole } from './db.js';
 
-const JWT_SECRET = process.env.JWT_SECRET;
-
-if (!JWT_SECRET) {
-  throw new Error('JWT_SECRET environment variable is required.');
-}
+const JWT_SECRET = process.env.JWT_SECRET || 'supportdesk-portfolio-demo-secret';
 
 export interface AuthenticatedRequest extends Request {
   user?: {
