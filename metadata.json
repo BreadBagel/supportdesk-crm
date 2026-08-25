@@ -1,0 +1,6 @@
+{
+  "name": "SupportDesk CRM",
+  "description": "Full-stack Customer Relationship Management & Support Ticketing System with role-based access control, analytics dashboard, customer tracking, and ticket lifecycle management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

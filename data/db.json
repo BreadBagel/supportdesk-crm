@@ -1,0 +1,323 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-1",
+      "name": "Alex Rivera",
+      "email": "admin@supportdesk.com",
+      "passwordHash": "$2b$10$AM4zxY.w.Y94Oh5p0hIO/.UKeSLQL56qTe3Wm3Ckvwos7Zp1GmzJ2",
+      "role": "ADMIN",
+      "createdAt": "2026-07-07T10:35:51.453Z"
+    },
+    {
+      "id": "usr-agent-1",
+      "name": "Sarah Jenkins",
+      "email": "sarah.agent@supportdesk.com",
+      "passwordHash": "$2b$10$i0kzTUSz2XlfbU4vmt9A9uVexGp5MYIRtS0PscLFJcZRUPO2bODBa",
+      "role": "AGENT",
+      "createdAt": "2026-07-12T10:35:51.453Z"
+    },
+    {
+      "id": "usr-agent-2",
+      "name": "David Ross",
+      "email": "david.agent@supportdesk.com",
+      "passwordHash": "$2b$10$i0kzTUSz2XlfbU4vmt9A9uVexGp5MYIRtS0PscLFJcZRUPO2bODBa",
+      "role": "AGENT",
+      "createdAt": "2026-07-17T10:35:51.453Z"
+    },
+    {
+      "id": "usr-cust-1",
+      "name": "John Doe",
+      "email": "john.doe@techcorp.com",
+      "passwordHash": "$2b$10$xehTS5eEpFa8nfG9dz655u1k66GXqOgDNjjnpXol5azuQv8ZOmTR6",
+      "role": "CUSTOMER",
+      "customerId": "cust-1",
+      "createdAt": "2026-07-22T10:35:51.453Z"
+    },
+    {
+      "id": "usr-cust-2",
+      "name": "Alice Smith",
+      "email": "alice.smith@innovate.io",
+      "passwordHash": "$2b$10$xehTS5eEpFa8nfG9dz655u1k66GXqOgDNjjnpXol5azuQv8ZOmTR6",
+      "role": "CUSTOMER",
+      "customerId": "cust-2",
+      "createdAt": "2026-07-27T10:35:51.453Z"
+    },
+    {
+      "id": "usr-cust-3",
+      "name": "Robert Chen",
+      "email": "robert.chen@apex.com",
+      "passwordHash": "$2b$10$xehTS5eEpFa8nfG9dz655u1k66GXqOgDNjjnpXol5azuQv8ZOmTR6",
+      "role": "CUSTOMER",
+      "customerId": "cust-3",
+      "createdAt": "2026-08-01T10:35:51.453Z"
+    },
+    {
+      "name": "James Smith",
+      "email": "jamessmith@email.com",
+      "passwordHash": "$2b$10$X.7yuEXnZm0vEhlaZU8yk.4w9alHRMGLTt8745ZanQCw/O6frwG2i",
+      "role": "CUSTOMER",
+      "customerId": "cust-1786013183888-jod2",
+      "id": "usr-1786013183992-k8xr9",
+      "createdAt": "2026-08-06T10:46:23.992Z"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1",
+      "name": "John Doe",
+      "email": "john.doe@techcorp.com",
+      "phone": "+1 (555) 234-5678",
+      "company": "TechCorp Enterprise",
+      "notes": "Key enterprise client. High volume API integration.",
+      "createdAt": "2026-07-22T10:35:51.453Z"
+    },
+    {
+      "id": "cust-2",
+      "name": "Alice Smith",
+      "email": "alice.smith@innovate.io",
+      "phone": "+1 (555) 876-5432",
+      "company": "Innovate.io",
+      "notes": "Mid-tier SaaS customer requiring custom billing cycles.",
+      "createdAt": "2026-07-27T10:35:51.453Z"
+    },
+    {
+      "id": "cust-3",
+      "name": "Robert Chen",
+      "email": "robert.chen@apex.com",
+      "phone": "+1 (555) 456-7890",
+      "company": "Apex Solutions",
+      "notes": "Recently upgraded to Business Pro plan.",
+      "createdAt": "2026-08-01T10:35:51.453Z"
+    },
+    {
+      "id": "cust-4",
+      "name": "Elena Rostova",
+      "email": "elena@cloudnext.org",
+      "phone": "+1 (555) 901-2345",
+      "company": "CloudNext Org",
+      "notes": "Non-profit partner requiring SLA SLA-A support.",
+      "createdAt": "2026-08-03T10:35:51.453Z"
+    },
+    {
+      "id": "cust-5",
+      "name": "Marcus Vance",
+      "email": "marcus@vancecapital.com",
+      "phone": "+1 (555) 678-9012",
+      "company": "Vance Capital",
+      "notes": "Financial services client with strict security requirements.",
+      "createdAt": "2026-08-05T10:35:51.453Z"
+    },
+    {
+      "name": "James Smith",
+      "email": "jamessmith@email.com",
+      "phone": "+63915957291232",
+      "company": "test",
+      "notes": "Registered via web portal",
+      "id": "cust-1786013183888-jod2",
+      "createdAt": "2026-08-06T10:46:23.888Z"
+    }
+  ],
+  "tickets": [
+    {
+      "subject": "Billing on Time",
+      "description": "Billing on Time",
+      "priority": "URGENT",
+      "status": "OPEN",
+      "category": "BILLING",
+      "customerId": "cust-1786013183888-jod2",
+      "assignedAgentId": null,
+      "createdById": "usr-1786013183992-k8xr9",
+      "id": "TICK-1008",
+      "createdAt": "2026-08-06T10:48:51.846Z",
+      "updatedAt": "2026-08-06T10:48:51.848Z"
+    },
+    {
+      "id": "TICK-1001",
+      "subject": "SSO Integration Failing for Azure AD OAuth",
+      "description": "Our enterprise users are encountering 401 Unauthorized errors when authenticating via Azure AD single sign-on redirect.",
+      "priority": "URGENT",
+      "status": "IN_PROGRESS",
+      "category": "TECHNICAL",
+      "customerId": "cust-1",
+      "assignedAgentId": "usr-agent-1",
+      "createdById": "usr-cust-1",
+      "createdAt": "2026-08-02T10:35:51.453Z",
+      "updatedAt": "2026-08-05T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1006",
+      "subject": "Security Compliance Audit Questionnaire Request",
+      "description": "Please provide completed SOC2 Type II certification and latest penetration testing executive summary.",
+      "priority": "HIGH",
+      "status": "IN_PROGRESS",
+      "category": "GENERAL",
+      "customerId": "cust-5",
+      "assignedAgentId": "usr-agent-2",
+      "createdById": "usr-admin-1",
+      "createdAt": "2026-08-05T10:35:51.453Z",
+      "updatedAt": "2026-08-05T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1003",
+      "subject": "Unable to Add Additional Team Members in Admin Portal",
+      "description": "Clicking the \"Invite Member\" button throws a console JS TypeError: Cannot read properties of undefined.",
+      "priority": "MEDIUM",
+      "status": "RESOLVED",
+      "category": "ACCOUNT",
+      "customerId": "cust-3",
+      "assignedAgentId": "usr-agent-1",
+      "createdById": "usr-cust-3",
+      "createdAt": "2026-07-30T10:35:51.453Z",
+      "updatedAt": "2026-08-04T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1005",
+      "subject": "API Gateway Rate Limit Exceeded during Peak Hours",
+      "description": "API endpoint /api/v2/webhooks returns 429 Too Many Requests every day between 2 PM and 4 PM EST.",
+      "priority": "URGENT",
+      "status": "OPEN",
+      "category": "TECHNICAL",
+      "customerId": "cust-4",
+      "assignedAgentId": "usr-agent-1",
+      "createdById": "usr-admin-1",
+      "createdAt": "2026-08-04T10:35:51.453Z",
+      "updatedAt": "2026-08-04T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1002",
+      "subject": "Invoice Discrepancy on July Billing Cycle",
+      "description": "The monthly recurring charge includes an unexpected $120 bandwidth overage fee despite remaining within tier limits.",
+      "priority": "HIGH",
+      "status": "OPEN",
+      "category": "BILLING",
+      "customerId": "cust-2",
+      "assignedAgentId": "usr-agent-2",
+      "createdById": "usr-cust-2",
+      "createdAt": "2026-08-03T10:35:51.453Z",
+      "updatedAt": "2026-08-03T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1004",
+      "subject": "Feature Request: Export Analytics Reports as CSV & PDF",
+      "description": "We need the capability to schedule automated weekly CSV exports of our team activity logs and customer ticket resolution times.",
+      "priority": "LOW",
+      "status": "PENDING",
+      "category": "FEATURE_REQUEST",
+      "customerId": "cust-1",
+      "assignedAgentId": null,
+      "createdById": "usr-cust-1",
+      "createdAt": "2026-07-31T10:35:51.453Z",
+      "updatedAt": "2026-08-01T10:35:51.453Z"
+    },
+    {
+      "id": "TICK-1007",
+      "subject": "Password Reset Link Expired Token Error",
+      "description": "User reported receiving expired link error immediately upon clicking password reset email.",
+      "priority": "LOW",
+      "status": "CLOSED",
+      "category": "ACCOUNT",
+      "customerId": "cust-2",
+      "assignedAgentId": "usr-agent-2",
+      "createdById": "usr-cust-2",
+      "createdAt": "2026-07-25T10:35:51.453Z",
+      "updatedAt": "2026-07-27T10:35:51.453Z"
+    },
+    {
+      "subject": "Bug Issues on Diamond Currency",
+      "description": "There's duplication bug for diamonds",
+      "priority": "URGENT",
+      "status": "RESOLVED",
+      "category": "TECHNICAL",
+      "customerId": "cust-1",
+      "assignedAgentId": null,
+      "createdById": "usr-cust-1",
+      "id": "TICK-1009",
+      "createdAt": "2026-08-23T15:48:38.171Z",
+      "updatedAt": "2026-08-23T15:50:02.256Z"
+    }
+  ],
+  "comments": [
+    {
+      "id": "cmnt-1",
+      "ticketId": "TICK-1001",
+      "userId": "usr-cust-1",
+      "userName": "John Doe",
+      "userRole": "CUSTOMER",
+      "content": "We noticed this started happening after yesterday night's OAuth gateway update.",
+      "createdAt": "2026-08-03T10:35:51.453Z"
+    },
+    {
+      "id": "cmnt-2",
+      "ticketId": "TICK-1001",
+      "userId": "usr-agent-1",
+      "userName": "Sarah Jenkins",
+      "userRole": "AGENT",
+      "content": "Thanks for reaching out John. I am reviewing the OAuth log traces for Azure AD tenant callback signatures now.",
+      "createdAt": "2026-08-04T10:35:51.453Z"
+    },
+    {
+      "id": "cmnt-3",
+      "ticketId": "TICK-1003",
+      "userId": "usr-agent-1",
+      "userName": "Sarah Jenkins",
+      "userRole": "AGENT",
+      "content": "We deployed a hotfix to patch the user invitation schema validation. Please try inviting members again!",
+      "createdAt": "2026-08-04T10:35:51.453Z"
+    },
+    {
+      "id": "cmnt-4",
+      "ticketId": "TICK-1003",
+      "userId": "usr-cust-3",
+      "userName": "Robert Chen",
+      "userRole": "CUSTOMER",
+      "content": "Confirmed working now! Added 3 new team members without issues. Thanks Sarah!",
+      "createdAt": "2026-08-04T10:35:51.453Z"
+    },
+    {
+      "ticketId": "TICK-1008",
+      "userId": "usr-1786013183992-k8xr9",
+      "userName": "James Smith",
+      "userRole": "CUSTOMER",
+      "content": "Ticket created with status OPEN and URGENT priority.",
+      "id": "cmnt-1786013331848-i7du",
+      "createdAt": "2026-08-06T10:48:51.848Z"
+    },
+    {
+      "ticketId": "TICK-1009",
+      "userId": "usr-cust-1",
+      "userName": "John Doe",
+      "userRole": "CUSTOMER",
+      "content": "Ticket created with status OPEN and URGENT priority.",
+      "id": "cmnt-1787500118173-0brn",
+      "createdAt": "2026-08-23T15:48:38.173Z"
+    },
+    {
+      "ticketId": "TICK-1009",
+      "userId": "usr-agent-1",
+      "userName": "Sarah Jenkins",
+      "userRole": "AGENT",
+      "content": "Hi, My name is Sarah Jenkins, we have found the issue and resolved it. Thank you for your time.",
+      "id": "cmnt-1787500169530-0di6",
+      "createdAt": "2026-08-23T15:49:29.530Z"
+    },
+    {
+      "ticketId": "TICK-1009",
+      "userId": "usr-agent-1",
+      "userName": "Sarah Jenkins",
+      "userRole": "AGENT",
+      "content": "Status updated from OPEN to RESOLVED.",
+      "id": "cmnt-1787500179194-x6px",
+      "createdAt": "2026-08-23T15:49:39.194Z"
+    },
+    {
+      "ticketId": "TICK-1009",
+      "userId": "usr-cust-1",
+      "userName": "John Doe",
+      "userRole": "CUSTOMER",
+      "content": "Thank you.",
+      "id": "cmnt-1787500202256-jx3a",
+      "createdAt": "2026-08-23T15:50:02.256Z"
+    }
+  ],
+  "ticketCounter": 1010
+}
