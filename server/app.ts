@@ -10,7 +10,14 @@ export function createApp() {
 
   if (process.env.VERCEL) {
     app.use((req, res, next) => {
-      if (req.url.startsWith('/api/index')) {
+      const requestUrl = new URL(req.url, 'http://localhost');
+      const routedPath = requestUrl.searchParams.get('__route');
+
+      if (routedPath) {
+        requestUrl.searchParams.delete('__route');
+        const remainingQuery = requestUrl.searchParams.toString();
+        req.url = `/api${routedPath}${remainingQuery ? `?${remainingQuery}` : ''}`;
+      } else if (req.url.startsWith('/api/index')) {
         req.url = `/api${req.url.slice('/api/index'.length) || '/'}`;
       } else if (req.url !== '/api' && !req.url.startsWith('/api/')) {
         req.url = `/api${req.url}`;
